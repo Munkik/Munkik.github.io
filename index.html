@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Awtomatic</title>
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href=./css/style.css>
+</head>
+<body>
+	<div class="content">
+		<div class="container form-container">
+			<form action="./">
+				<div class="row">
+					<div class="col-sm-12">
+						<h1>Awtomatic</h1>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<div class="form-group">
+							<label for="vin">VIN</label>
+							<input type="text" class="form-control" id="vin" value="4212A3215">
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<div class="form-group">
+							<label for="make">Make</label>
+							<input type="text" class="form-control" id="make" value="Honda">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<div class="form-group">
+							<label for="model">Model</label>
+							<input type="text" class="form-control" id="model" value="Civic">
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<div class="form-group">
+							<label for="year">Year</label>
+							<input type="number" class="form-control" id="year" value="2017" step="1">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<div class="form-group">
+							<label for="condition">Condition</label>
+							<input type="text" class="form-control" id="condition" value="Brand New">
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<div class="form-group">
+							<label for="color">Color</label>
+							<input type="text" class="form-control" id="color" value="Black">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<div class="form-group">
+							<label for="transmission">Transmission</label>
+							<select class="form-control" id="transmission">
+								<option value="Manual">Manual</option>
+								<option value="Automatic">Automatic</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<div class="form-group">
+							<label for="fuel">Fuel</label>
+							<input type="text" class="form-control" id="fuel" value="Full">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<div class="form-group">
+							<label for="price">Price</label>
+							<input type="number" class="form-control" id="price" step="0.01" value="0.00">
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<div class="form-group">
+							<label for="mileage">Mileage</label>
+							<input type="number" class="form-control" id="mileage" step="0.01" value="0">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<button type="submit" class="btn btn-primary">Submit</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+</body>
+</html>
