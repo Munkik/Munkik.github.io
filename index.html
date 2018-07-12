@@ -8,7 +8,7 @@
 <body>
 	<div class="content">
 		<div class="container form-container">
-			<form action="./">
+			<form action="#" id="main-form">
 				<div class="row">
 					<div class="col-sm-12">
 						<h1>Awtomatic</h1>
@@ -16,13 +16,13 @@
 					<div class="col-sm-12 col-md-6">
 						<div class="form-group">
 							<label for="vin">VIN</label>
-							<input type="text" class="form-control" id="vin" value="4212A3215">
+							<input type="text" class="form-control" name="vin" id="vin" value="4212A3215">
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-6">
 						<div class="form-group">
 							<label for="make">Make</label>
-							<input type="text" class="form-control" id="make" value="Honda">
+							<input type="text" class="form-control" name="make" id="make" value="Honda">
 						</div>
 					</div>
 				</div>
@@ -30,13 +30,13 @@
 					<div class="col-sm-12 col-md-6">
 						<div class="form-group">
 							<label for="model">Model</label>
-							<input type="text" class="form-control" id="model" value="Civic">
+							<input type="text" class="form-control" name="model" id="model" value="Civic">
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-6">
 						<div class="form-group">
 							<label for="year">Year</label>
-							<input type="number" class="form-control" id="year" value="2017" step="1">
+							<input type="number" class="form-control" name="year" id="year" value="2017" step="1">
 						</div>
 					</div>
 				</div>
@@ -44,13 +44,13 @@
 					<div class="col-sm-12 col-md-6">
 						<div class="form-group">
 							<label for="condition">Condition</label>
-							<input type="text" class="form-control" id="condition" value="Brand New">
+							<input type="text" class="form-control" name="condition" id="condition" value="Brand New">
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-6">
 						<div class="form-group">
 							<label for="color">Color</label>
-							<input type="text" class="form-control" id="color" value="Black">
+							<input type="text" class="form-control" name="color" id="color" value="Black">
 						</div>
 					</div>
 				</div>
@@ -58,8 +58,8 @@
 					<div class="col-sm-12 col-md-6">
 						<div class="form-group">
 							<label for="transmission">Transmission</label>
-							<select class="form-control" id="transmission">
-								<option value="Manual">Manual</option>
+							<select class="form-control" name="transmission" id="transmission">
+								<option value="Manual" selected="selected">Manual</option>
 								<option value="Automatic">Automatic</option>
 							</select>
 						</div>
@@ -67,7 +67,7 @@
 					<div class="col-sm-12 col-md-6">
 						<div class="form-group">
 							<label for="fuel">Fuel</label>
-							<input type="text" class="form-control" id="fuel" value="Full">
+							<input type="text" class="form-control" name="fuel" id="fuel" value="Full">
 						</div>
 					</div>
 				</div>
@@ -75,19 +75,33 @@
 					<div class="col-sm-12 col-md-6">
 						<div class="form-group">
 							<label for="price">Price</label>
-							<input type="number" class="form-control" id="price" step="0.01" value="0.00">
+							<input type="number" class="form-control" name="price" id="price" step="0.01" value="0.00">
 						</div>
 					</div>
 					<div class="col-sm-12 col-md-6">
 						<div class="form-group">
 							<label for="mileage">Mileage</label>
-							<input type="number" class="form-control" id="mileage" step="0.01" value="0">
+							<input type="number" class="form-control" name="mileage" id="mileage" step="0.01" value="0">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-md-6">
+						<div class="form-group">
+							<label for="seller">Seller</label>
+							<input type="text" class="form-control" name="seller" id="seller" value="Mark Penaflorida">
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-6">
+						<div class="form-group">
+							<label for="location">Location</label>
+							<input type="text" class="form-control" name="location" id="location" value="Sta. Rosa, Laguna">
 						</div>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-sm-12">
-						<button type="submit" class="btn btn-primary">Submit</button>
+						<button type="submit" class="btn btn-primary" id="submit">Submit</button>
 					</div>
 				</div>
 			</form>
@@ -95,5 +109,6 @@
 	</div>
 	<script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./js/submit.js"></script>
 </body>
 </html>
