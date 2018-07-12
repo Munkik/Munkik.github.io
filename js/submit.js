@@ -1,6 +1,6 @@
 $("form").submit(function(event){
 	event.preventDefault();
-	var serviceUrl = "http://localhost:8080/sentinel/create/carseller";
+	var serviceUrl = $(this).attr("action");
 	var formData = $(this).serializeArray();
 
 	var requestData = {};
